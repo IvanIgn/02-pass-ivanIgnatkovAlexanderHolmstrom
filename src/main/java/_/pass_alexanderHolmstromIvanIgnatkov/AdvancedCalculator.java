@@ -23,29 +23,29 @@ public class AdvancedCalculator extends BasicCalculator implements AdvancedCalcu
 		return firstNumber / secondNumber;
 	}
 
-	@Override
+
 	public double squareroot(double number) {
 		return Math.sqrt(number);
 	}
 
-	@Override
+	
 	public double raisedToThePowerOf(double base, double exponent) {
 		return Math.pow(base, exponent);
 	}
 
-	@Override
+
 	public double absoluteValue(double number) {
 		return Math.abs(number);
 	}
 
-	@Override
+
 	public double square(double number) {
-		return number * number;
+		return Math.pow(number, 2);
 	}
 
-	@Override
+
 	public double cube(double number) {
-		return number * number * number;
+		return Math.pow(number, 3);
 	}
 
 }
