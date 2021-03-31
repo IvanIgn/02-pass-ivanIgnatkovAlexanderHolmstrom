@@ -3,7 +3,7 @@ import java.lang.Math;
 
 public class AdvancedCalculator extends BasicCalculator implements AdvancedCalculatorInterface {
 
-	@Override
+	/*@Override
 	public double addition(double firstNumber, double secondNumber) {
 		return firstNumber + secondNumber;
 	}
@@ -22,7 +22,7 @@ public class AdvancedCalculator extends BasicCalculator implements AdvancedCalcu
 	public double division(double firstNumber, double secondNumber) {
 		return firstNumber / secondNumber;
 	}
-
+*/
 
 	public double squareroot(double number) {
 		return Math.sqrt(number);

@@ -1,6 +1,7 @@
 package _.pass_alexanderHolmstromIvanIgnatkov;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.Random;
 
@@ -11,10 +12,10 @@ public class MainTest {
 	AdvancedCalculator advCalc = new AdvancedCalculator();
 	Main main = new Main();
 	
-	@Test
-	public void testMainAdditionMethod() {
-		
-			assertEquals(basCalc.addition(1.0, 2.0), 3.0, 0);
-
-	}
+	
+	
+	  @Test
+	    public void testMainMethod() {
+	        Main.main(null);
+	    }
 }
