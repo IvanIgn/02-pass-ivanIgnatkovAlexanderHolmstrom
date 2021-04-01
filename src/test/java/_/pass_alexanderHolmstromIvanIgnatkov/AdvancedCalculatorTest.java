@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import java.text.DecimalFormat;
 
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 import org.junit.Test;
 
@@ -15,161 +16,232 @@ public class AdvancedCalculatorTest {
 	double numberTwo = 0.0;
 	double result = 0.0;
     static DecimalFormat df2 = new DecimalFormat("#.##");
-    int min = -10; 
-    int max = 10;
-	/*
-	@Test
-	public void testAdditionMethod() {
-		
-		System.out.println("Addition: ");
-		for (int i = 0; i < 10; i++) {
-			numberOne = -10 + rand.nextDouble()*10;
-			System.out.println(numberOne);
-			numberTwo = -10 + rand.nextDouble()*10;
-			System.out.println(numberTwo);
-			result = numberOne + numberTwo;
-			System.out.println(result);
-			
-			assertEquals(calc.addition(numberOne, numberTwo), result, 0);
-		}
-		System.out.println();
-	}
-	
-	@Test
-	public void testSubtractionMethod() {
-		
-		System.out.println("Subtraction: ");
-		for (int i = 0; i < 10; i++) {
-			numberOne = rand.nextDouble()*10;
-			System.out.println(numberOne);
-			numberTwo = rand.nextDouble()*10;
-			System.out.println(numberTwo);
-			result = numberOne - numberTwo;
-			System.out.println(result);
-			
-			assertEquals(calc.subtraction(numberOne, numberTwo), result, 0);
-		}
-		System.out.println();
-	}
-	
-	@Test
-	public void testMultiplicationMethod() {
-		System.out.println("Multiplication: ");
+    double min = -10.0; 
+    double max = 10.0;
+
+    //// testSquarerootMethod ////
+    @Test
+	public void testSquarerootMethodPositive() {
+    	System.out.print("\n--------------------------------------------------------------------------------------");
+		System.out.println("\nSquareroot Positive: ");
 		
 		for (int i = 0; i < 10; i++) {
-			numberOne = rand.nextDouble()*10;
-			System.out.println(numberOne);
-			numberTwo = rand.nextDouble()*10;
-			System.out.println(numberTwo);
-			result = numberOne * numberTwo;
-			System.out.println(result);
+			numberOne =  (rand.nextDouble()*10);
 			
-			assertEquals(calc.multiplication(numberOne, numberTwo), result, 0);
-		}
-		System.out.println();
-	}
-	
-	@Test
-	public void testDivisionMethod() {
-		
-		System.out.println("Division: ");
-		for (int i = 0; i < 10; i++) {
-			numberOne = rand.nextDouble()*10;
-			System.out.println(numberOne);
-			numberTwo = rand.nextDouble()*10;
-			System.out.println(numberTwo);
-			result = numberOne / numberTwo;
-			System.out.println(result);
-			
-			assertEquals(calc.division(numberOne, numberTwo), result, 0);
-		}
-		System.out.println();
-	}
-	*/
-	@Test
-	public void testSquarerootMethod() {
-		System.out.println("Squareroot: ");
-		
-		for (int i = 0; i < 10; i++) {
-			numberOne =  (-0.5 + rand.nextDouble()*10);
-			//System.out.println(numberOne);
-			
-	
 			result = Math.sqrt(numberOne);
-			System.out.println(df2.format(result));
+			System.out.print(df2.format(result) + " | " );
 			
 			assertEquals(calc.squareroot(numberOne), result, 0);
 		}
-		System.out.println(" ");
+		System.out.print("\n--------------------------------------------------------------------------------------");
+	
+		System.out.println("\nSquareroot Negative: ");
+	
+		for (int i = 0; i < 10; i++) {
+			numberOne =  (-20 + rand.nextDouble()*10);
+		
+			result = Math.sqrt(numberOne);
+			System.out.print(df2.format(result) + " | " );
+			
+			
+			assertEquals(calc.squareroot(numberOne), result, 0);
+		}
+		System.out.print("\nIt's impossible to get a square root of a negative number!");
+		System.out.print("\n--------------------------------------------------------------------------------------");
+		
+		System.out.println("\nSquareroot Zero: ");
+	
+		for (int i = 0; i < 10; i++) {
+			numberOne =  0;//(-20 + rand.nextDouble()*10);
+			System.out.print(numberOne);
+
+			result = Math.sqrt(numberOne);
+			System.out.print(df2.format(result) + " | " );
+			
+			assertEquals(calc.squareroot(numberOne), result, 0);
+		}
+		System.out.print("\nZero has only one square root which is 0!");
+		System.out.print("\n======================================================================================");
 	}
 	
+	//// testRaisedToThePowerOf ////
 	@Test
 	public void testRaisedToThePowerOfMethod() {
 		
-		System.out.println("RaisedToThePowerOf: ");
+		System.out.println("\nRaisedToThePowerOf: ");
 		for (int i = 0; i < 10; i++) {
-			numberOne = (-0.5 + rand.nextDouble()*10);
-			//System.out.println(numberOne);
-			numberTwo = (-0.5 + rand.nextDouble()*10);
-			//System.out.println(numberTwo);
+			numberOne = (rand.nextDouble()*10);
+		
+			numberTwo = (rand.nextDouble()*10);
+			
 			result = Math.pow(numberOne, numberTwo);
-			System.out.println(df2.format(result));
+			
+			System.out.print(df2.format(result) + " | " );
 			
 			assertEquals(calc.raisedToThePowerOf(numberOne, numberTwo), result, 0);
+			
 		}
-		System.out.println(" ");
+		System.out.print("\n--------------------------------------------------------------------------------------");
+	
+		System.out.println("\nRaisedToThePowerOfMinus: ");
+		
+		for (int i = 0; i < 10; i++) {
+			numberOne = (rand.nextDouble() *-10);
+		
+			numberTwo = (rand.nextDouble() *-10);
+		
+			result = Math.pow(numberOne, numberTwo);
+			
+			System.out.print(df2.format(result) + " | " );
+			
+			assertEquals(calc.raisedToThePowerOf(numberOne, numberTwo), result, 0);
+			
+		}
+		System.out.print("\n--------------------------------------------------------------------------------------");
+
+		System.out.println("\nRaisedToThePowerOfZero: ");
+		
+		for (int i = 0; i < 10; i++) {
+			numberOne = 0; 
+		
+			numberTwo = 0;
+			
+			result = Math.pow(numberOne, numberTwo);
+			
+			System.out.print(df2.format(result) + " | " );
+			
+			assertEquals(calc.raisedToThePowerOf(numberOne, numberTwo), result, 0);
+			
+		}
+		System.out.print("\nAny number raised to the power of 0 equals to 1!");
+		System.out.print("\n======================================================================================");
 	}
+	
+	
+	
+	//// testAbsoluteValue ////
 	
 	@Test
 	public void testAbsoluteValueMethod() {
-		System.out.println("Absolute: ");
+		System.out.println("\nAbsolute Positive: ");
 		
 		for (int i = 0; i < 10; i++) {
-			numberOne =  ((rand.nextDouble() * (max - min)) + min);
-			//System.out.println(numberOne);
+			numberOne =  (rand.nextDouble()*30);
 			
-	
+			
 			result = Math.abs(numberOne);
-			System.out.println(df2.format(result));
+			System.out.print(df2.format(result) + " | " );
 			
 			assertEquals(calc.absoluteValue(numberOne), result, 0);
 		}
-		System.out.println(" ");
-	}
+		System.out.print("\n--------------------------------------------------------------------------------------");
 	
-	@Test
-	public void testSquareMethod() {
-		System.out.println("Square: ");
+		System.out.println("\nAbsolute Negative: ");
 		
 		for (int i = 0; i < 10; i++) {
-			numberOne =  ((rand.nextDouble() * (max - min)) + min);
-			//System.out.println(numberOne);
+			numberOne = (rand.nextDouble()*-100);
 			
+			result = Math.abs(numberOne);
+			System.out.print(df2.format(result) + " | " );
+			
+			assertEquals(calc.absoluteValue(numberOne), result, 0);
+		}
+		System.out.print("\n--------------------------------------------------------------------------------------");
+
+		System.out.println("\nAbsolute Zero: ");
+		
+		for (int i = 0; i < 10; i++) {
+			numberOne = 0;
+			
+			result = Math.abs(numberOne);
+			System.out.print(df2.format(result) + " | " );
+			
+			assertEquals(calc.absoluteValue(numberOne), result, 0);
+		}
+		System.out.print("\n======================================================================================");
+	}
 	
+	
+	
+	//// testSquare ////
+	@Test
+	public void testSquareZeroMethod() {
+		System.out.println("\nSquare Positive: ");
+		for (int i = 0; i < 10; i++) {
+			numberOne =  (rand.nextDouble()* 100);
+			
 			result = Math.pow(numberOne, 2);
-			System.out.println(df2.format(result));
+			System.out.print(df2.format(result) + " | " );
 			
 			assertEquals(calc.square(numberOne), result, 0);
 		}
-		System.out.println(" ");
+		System.out.print("\n--------------------------------------------------------------------------------------");
+		
+		System.out.println("\nSquare Negative: ");
+		
+		for (int i = 0; i < 10; i++) {
+			numberOne =  (rand.nextDouble()* -100);
+			
+			result = Math.pow(numberOne, 2);
+			System.out.print(df2.format(result) + " | " );
+			
+			assertEquals(calc.square(numberOne), result, 0);
+		}
+		System.out.print("\n--------------------------------------------------------------------------------------");
+		
+		System.out.println("\nSquare Zero: ");
+		
+		for (int i = 0; i < 10; i++) {
+			numberOne =  0;
+		
+			result = Math.pow(numberOne, 2);
+			System.out.print(df2.format(result) + " | " );
+			
+			assertEquals(calc.square(numberOne), result, 0);
+		}
+		System.out.print("\n======================================================================================");
 	}
 	
-	@Test
-	public void testCubeMethod() {
-		
-		System.out.println("Cube: ");
-		for (int i = 0; i < 10; i++) {
-			numberOne =  ((rand.nextDouble() * (max - min)) + min);
-			//System.out.println(numberOne);
-			
 	
+	
+	//// testCubeMethod ////
+	@Test
+	public void testCubeMethodPositive() {
+		
+		System.out.println("\nCube Positive: ");
+		for (int i = 0; i < 10; i++) {
+			numberOne =  (rand.nextDouble()* 100);
+		
 			result = Math.pow(numberOne, 3);
-			System.out.println(df2.format(result));
+			System.out.print(df2.format(result) + " | " );
 			
 			assertEquals(calc.cube(numberOne), result, 0);
 		}
-		System.out.println(" ");
+		System.out.print("\n--------------------------------------------------------------------------------------");
+
+		System.out.println("\nCube Negative: ");
+		for (int i = 0; i < 10; i++) {
+			numberOne =  (rand.nextDouble()* -100);
+			
+			result = Math.pow(numberOne, 3);
+			System.out.print(df2.format(result) + " | " );
+			
+			assertEquals(calc.cube(numberOne), result, 0);
+		}
+		System.out.print("\n--------------------------------------------------------------------------------------");
+
+		System.out.println("\nCube Zero: ");
+		for (int i = 0; i < 10; i++) {
+			numberOne =  0;
+				
+			result = Math.pow(numberOne, 3);
+			System.out.print(df2.format(result) + " | " );
+			
+			assertEquals(calc.cube(numberOne), result, 0);
+		}
+		System.out.print("\n======================================================================================");
 	}
+	
 	
 	
 	
