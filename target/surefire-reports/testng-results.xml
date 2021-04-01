@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-01T18:05:26Z" name="Surefire suite" finished-at="2021-04-01T18:05:26Z" duration-ms="166">
+    <groups>
+    </groups>
+    <test started-at="2021-04-01T18:05:26Z" name="Surefire test" finished-at="2021-04-01T18:05:26Z" duration-ms="166">
+      <class name="_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest">
+        <test-method signature="testBasicMultiplicationMethodPositive()[pri:0, instance:testBasicMultiplicationMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest)]" started-at="2021-04-01T20:05:26Z" name="testBasicMultiplicationMethodPositive" finished-at="2021-04-01T20:05:26Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBasicMultiplicationMethodPositive -->
+        <test-method signature="testBasicAdditionMethodPositive()[pri:0, instance:testBasicAdditionMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest)]" started-at="2021-04-01T20:05:26Z" name="testBasicAdditionMethodPositive" finished-at="2021-04-01T20:05:26Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBasicAdditionMethodPositive -->
+        <test-method signature="testBasicSubtractionMethodPositive()[pri:0, instance:testBasicSubtractionMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest)]" started-at="2021-04-01T20:05:26Z" name="testBasicSubtractionMethodPositive" finished-at="2021-04-01T20:05:26Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBasicSubtractionMethodPositive -->
+        <test-method signature="testBasicDivisionMethodPositive()[pri:0, instance:testBasicDivisionMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest)]" started-at="2021-04-01T20:05:26Z" name="testBasicDivisionMethodPositive" finished-at="2021-04-01T20:05:26Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBasicDivisionMethodPositive -->
+      </class> <!-- _.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest -->
+      <class name="_.pass_alexanderHolmstromIvanIgnatkov.MainTest">
+        <test-method signature="testMainMethod()[pri:0, instance:testMainMethod(_.pass_alexanderHolmstromIvanIgnatkov.MainTest)]" started-at="2021-04-01T20:05:26Z" name="testMainMethod" finished-at="2021-04-01T20:05:26Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMainMethod -->
+      </class> <!-- _.pass_alexanderHolmstromIvanIgnatkov.MainTest -->
+      <class name="_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest">
+        <test-method signature="testSquarerootMethodPositive()[pri:0, instance:testSquarerootMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest)]" started-at="2021-04-01T20:05:26Z" name="testSquarerootMethodPositive" finished-at="2021-04-01T20:05:26Z" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquarerootMethodPositive -->
+        <test-method signature="testSquareZeroMethod()[pri:0, instance:testSquareZeroMethod(_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest)]" started-at="2021-04-01T20:05:26Z" name="testSquareZeroMethod" finished-at="2021-04-01T20:05:26Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquareZeroMethod -->
+        <test-method signature="testAbsoluteValueMethod()[pri:0, instance:testAbsoluteValueMethod(_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest)]" started-at="2021-04-01T20:05:26Z" name="testAbsoluteValueMethod" finished-at="2021-04-01T20:05:26Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAbsoluteValueMethod -->
+        <test-method signature="testRaisedToThePowerOfMethod()[pri:0, instance:testRaisedToThePowerOfMethod(_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest)]" started-at="2021-04-01T20:05:26Z" name="testRaisedToThePowerOfMethod" finished-at="2021-04-01T20:05:26Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRaisedToThePowerOfMethod -->
+        <test-method signature="testCubeMethodPositive()[pri:0, instance:testCubeMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest)]" started-at="2021-04-01T20:05:26Z" name="testCubeMethodPositive" finished-at="2021-04-01T20:05:26Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCubeMethodPositive -->
+      </class> <!-- _.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

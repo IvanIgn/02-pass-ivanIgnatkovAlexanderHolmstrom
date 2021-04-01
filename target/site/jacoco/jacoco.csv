@@ -1,0 +1,4 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+pass-alexanderHolmstromIvanIgnatkov,_.pass_alexanderHolmstromIvanIgnatkov,Main,0,46,0,0,0,10,0,2,0,2
+pass-alexanderHolmstromIvanIgnatkov,_.pass_alexanderHolmstromIvanIgnatkov,BasicCalculator,0,19,0,0,0,5,0,5,0,5
+pass-alexanderHolmstromIvanIgnatkov,_.pass_alexanderHolmstromIvanIgnatkov,AdvancedCalculator,0,21,0,0,0,6,0,6,0,6

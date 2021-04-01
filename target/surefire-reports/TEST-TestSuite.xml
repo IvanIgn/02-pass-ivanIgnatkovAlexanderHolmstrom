@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="_.pass_alexanderHolmstromIvanIgnatkov.MainTest" time="0.001" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="0.791" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.class.path" value="C:\Users\tomas\git\pass-alexanderHolmstromIvanIgnatkov\target\test-classes;C:\Users\tomas\git\pass-alexanderHolmstromIvanIgnatkov\target\classes;C:\Users\tomas\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\tomas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\tomas\git\pass-alexanderHolmstromIvanIgnatkov\target\test-classes;C:\Users\tomas\git\pass-alexanderHolmstromIvanIgnatkov\target\classes;C:\Users\tomas\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\tomas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\tomas\.m2\repository\org\testng\testng\6.8.8\testng-6.8.8.jar;C:\Users\tomas\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\tomas\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\tomas\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\tomas\AppData\Local\Temp\surefire7124271731595947580\surefirebooter928930971724847589.jar C:\Users\tomas\AppData\Local\Temp\surefire7124271731595947580 2021-03-31T14-39-53_943-jvmRun1 surefire13933711190019634724tmp surefire_03334444976042754489tmp"/>
+    <property name="sun.java.command" value="C:\Users\tomas\AppData\Local\Temp\surefire574593091982144132\surefirebooter13585714077999570849.jar C:\Users\tomas\AppData\Local\Temp\surefire574593091982144132 2021-04-01T20-05-24_541-jvmRun1 surefire9254309817047156463tmp surefire_013996706736028486876tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\tomas\git\pass-alexanderHolmstromIvanIgnatkov\target\test-classes;C:\Users\tomas\git\pass-alexanderHolmstromIvanIgnatkov\target\classes;C:\Users\tomas\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\tomas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\tomas\git\pass-alexanderHolmstromIvanIgnatkov\target\test-classes;C:\Users\tomas\git\pass-alexanderHolmstromIvanIgnatkov\target\classes;C:\Users\tomas\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\tomas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\tomas\.m2\repository\org\testng\testng\6.8.8\testng-6.8.8.jar;C:\Users\tomas\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\tomas\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\tomas"/>
     <property name="user.language" value="ru"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\tomas\AppData\Local\Temp\surefire7124271731595947580\surefirebooter928930971724847589.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\tomas\AppData\Local\Temp\surefire574593091982144132\surefirebooter13585714077999570849.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.1+9-18"/>
@@ -57,5 +57,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testMainMethod" classname="_.pass_alexanderHolmstromIvanIgnatkov.MainTest" time="0"/>
+  <testcase name="testSquarerootMethodPositive on testSquarerootMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest)" classname="_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest" time="0.01"/>
+  <testcase name="testSquareZeroMethod on testSquareZeroMethod(_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest)" classname="_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest" time="0.006"/>
+  <testcase name="testAbsoluteValueMethod on testAbsoluteValueMethod(_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest)" classname="_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest" time="0.006"/>
+  <testcase name="testRaisedToThePowerOfMethod on testRaisedToThePowerOfMethod(_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest)" classname="_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest" time="0.007"/>
+  <testcase name="testCubeMethodPositive on testCubeMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest)" classname="_.pass_alexanderHolmstromIvanIgnatkov.AdvancedCalculatorTest" time="0.012"/>
+  <testcase name="testMainMethod on testMainMethod(_.pass_alexanderHolmstromIvanIgnatkov.MainTest)" classname="_.pass_alexanderHolmstromIvanIgnatkov.MainTest" time="0.002"/>
+  <testcase name="testBasicMultiplicationMethodPositive on testBasicMultiplicationMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest)" classname="_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest" time="0.013"/>
+  <testcase name="testBasicAdditionMethodPositive on testBasicAdditionMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest)" classname="_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest" time="0.005"/>
+  <testcase name="testBasicSubtractionMethodPositive on testBasicSubtractionMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest)" classname="_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest" time="0.003"/>
+  <testcase name="testBasicDivisionMethodPositive on testBasicDivisionMethodPositive(_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest)" classname="_.pass_alexanderHolmstromIvanIgnatkov.BasicCalculatorTest" time="0.004"/>
 </testsuite>

@@ -117,7 +117,6 @@ public class BasicCalculatorTest {
 			
 			assertEquals(calc.subtraction(numberOne, numberTwo), result, 0);
 		}
-		System.out.print("\nZero divided by zero is undefined because everything is a valid solution!");
 		System.out.print("\n======================================================================================");
 	}
 	
@@ -224,6 +223,7 @@ public class BasicCalculatorTest {
 			
 			assertEquals(calc.division(numberOne, numberTwo), result, 0);
 		}
+		System.out.print("\nZero divided by zero is undefined because everything is a valid solution!");
 		System.out.print("\n======================================================================================");
 	}
 }

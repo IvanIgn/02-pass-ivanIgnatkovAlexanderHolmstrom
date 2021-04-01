@@ -68,7 +68,7 @@ public class AdvancedCalculatorTest {
 	@Test
 	public void testRaisedToThePowerOfMethod() {
 		
-		System.out.println("\nRaisedToThePowerOf: ");
+		System.out.println("\nRaisedToThePowerOf Positive: ");
 		for (int i = 0; i < 10; i++) {
 			numberOne = (rand.nextDouble()*10);
 		
@@ -83,12 +83,13 @@ public class AdvancedCalculatorTest {
 		}
 		System.out.print("\n--------------------------------------------------------------------------------------");
 	
-		System.out.println("\nRaisedToThePowerOfMinus: ");
+		System.out.println("\nRaisedToThePowerOf Negative: ");
 		
 		for (int i = 0; i < 10; i++) {
 			numberOne = (rand.nextDouble() *-10);
-		
+			//System.out.println(numberOne);
 			numberTwo = (rand.nextDouble() *-10);
+			//System.out.println(numberTwo);
 		
 			result = Math.pow(numberOne, numberTwo);
 			
@@ -99,7 +100,7 @@ public class AdvancedCalculatorTest {
 		}
 		System.out.print("\n--------------------------------------------------------------------------------------");
 
-		System.out.println("\nRaisedToThePowerOfZero: ");
+		System.out.println("\nRaisedToThePowerOf Zero: ");
 		
 		for (int i = 0; i < 10; i++) {
 			numberOne = 0; 
